@@ -18,9 +18,11 @@ class Data
 		Data ();
 	
 		void setY (float a);
-			Data (int a, float b;)
+			Data (int a, float b);
 			int getX ();
 			float getY ();
 
 		void setX (int a);
 };
+
+#endif

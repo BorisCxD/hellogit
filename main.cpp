@@ -3,34 +3,25 @@
 
  using namespace std;
 
-int main ()
+void bubblesort (auto & D)
 {
 
-vector <int> v1;
-vector <int> v2 = {5, 8, 22};
-v1 push_back (12);
-v2 push_back (17);
-v2 pop_back ();
+for (int i = 0; i < D.size (); i++) //each iteration here is a pass
+for ( int j = 0; j < D.size () - 1; j++)
+	if ( D [j] > D [j+i] )
+		swap ( D [j], D [j+i]);
+}
+ 
+int main ()
 
-cout << " v1 has " << v2.size () << " elements ";
+{
+vector <int> v = { 25, 18, 12, 17, 10};
+bubblesort (v);
 
-	for ( int x = 0; ie v2.size () i++	// to process all elements
-		{
-			cout << v [i] << endl;  // to process all elements
-	for (auto X : v2)
-		{
+for (auto i:v)
 
-		cout << x << endl;
-
-		}
-Data d0;
-Data d1 (7, 24.83);
-
-d0.setX (15);
-d1.setY (3,14);
-
-return 0;
-
+cout << i << " " ;
+cout << endl ;
 
 
 
